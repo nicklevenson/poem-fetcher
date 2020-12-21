@@ -1072,3 +1072,634 @@ Processing by PoemsController#index as HTML
 Completed 200 OK in 1552ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 14254)
 
 
+Started GET "/rain" for ::1 at 2020-12-21 12:16:42 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"rain"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 4880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 10586)
+Completed 200 OK in 1560ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 18214)
+
+
+Started GET "/hello" for ::1 at 2020-12-21 12:16:47 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"hello"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1650)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1721)
+Completed 500 Internal Server Error in 1049ms (ActiveRecord: 0.0ms | Allocations: 3702)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/horse" for ::1 at 2020-12-21 12:16:55 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"horse"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4039)
+Completed 200 OK in 1101ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 6440)
+
+
+Started GET "/allan" for ::1 at 2020-12-21 12:19:44 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6435)
+Completed 200 OK in 1120ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 11273)
+
+
+Started GET "/allen" for ::1 at 2020-12-21 12:19:54 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allen"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 454)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3993)
+Completed 200 OK in 1130ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6297)
+
+
+Started GET "/stafford" for ::1 at 2020-12-21 12:20:48 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"stafford"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 3717)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3787)
+Completed 500 Internal Server Error in 1083ms (ActiveRecord: 0.0ms | Allocations: 5761)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/kim" for ::1 at 2020-12-21 12:20:56 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"kim"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1351)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1423)
+Completed 500 Internal Server Error in 1031ms (ActiveRecord: 0.0ms | Allocations: 3510)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:21:20 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 585)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:21:29 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 5063)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 8736)
+Completed 200 OK in 2124ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 22983)
+
+
+Started GET "/whitman" for ::1 at 2020-12-21 12:21:42 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"whitman"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 4728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 8265)
+Completed 200 OK in 2162ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 21199)
+
+
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:21:52 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 584)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/waltwhitman" for ::1 at 2020-12-21 12:21:56 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"waltwhitman"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1345)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1415)
+Completed 500 Internal Server Error in 1075ms (ActiveRecord: 0.0ms | Allocations: 3383)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/whitman" for ::1 at 2020-12-21 12:22:03 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"whitman"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 4728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 8266)
+Completed 200 OK in 2122ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 21086)
+
+
+Started GET "/whitman" for ::1 at 2020-12-21 12:22:43 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"whitman"}
+Completed 500 Internal Server Error in 31050ms (ActiveRecord: 0.0ms | Allocations: 158402)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:25:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/whitman" for ::1 at 2020-12-21 12:23:19 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"whitman"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 293.4ms | Allocations: 3877376)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 388.2ms | Allocations: 4843456)
+Completed 200 OK in 3014ms (Views: 404.6ms | Allocations: 5672537)
+
+
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:23:42 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 11ms (Allocations: 100698)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:24:05 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 11ms (Allocations: 97045)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt-whitman" for ::1 at 2020-12-21 12:24:30 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt-whitman"}
+Completed 500 Internal Server Error in 30078ms (Allocations: 482194)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:26:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:25:02 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 9ms (Allocations: 94977)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:25:18 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 10ms (Allocations: 97045)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:26:05 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 357ms (Allocations: 4404028)
+
+
+  
+NoMethodError (undefined method `hostname' for "https://poetrydb.org/author/walt whitman":String):
+  
+app/models/poem_api.rb:5:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:26:20 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 12ms (Allocations: 107566)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt-whitman" for ::1 at 2020-12-21 12:26:35 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt-whitman"}
+Completed 500 Internal Server Error in 53044ms (Allocations: 461635)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:26:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:27:29 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 5ms (Allocations: 94977)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:30:15 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 12ms (Allocations: 107569)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman.json"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:30:34 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 10ms (Allocations: 97045)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt witman.json"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:31:14 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 351ms (Allocations: 4406978)
+
+
+  
+NoMethodError (undefined method `hostname' for "https://poetrydb.org/author/walt witman.json":String):
+  
+app/models/poem_api.rb:5:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:33:24 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 1535ms (Allocations: 344693)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/title/walt witman.json"):
+  
+app/models/poem_api.rb:9:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:34:10 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 11ms (Allocations: 110764)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt witman"):
+  
+app/models/poem_api.rb:6:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:38:10 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 18866ms (Allocations: 865686)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:38:39 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 18735ms (Allocations: 898610)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:39:13 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 101476ms (Allocations: 1000033)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:41:00 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 54099ms (Allocations: 848557)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:41:57 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 36326ms (Allocations: 56384937)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20witman" for ::1 at 2020-12-21 12:44:18 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt witman"}
+Completed 500 Internal Server Error in 11ms (Allocations: 107567)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt witman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:44:30 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+Completed 500 Internal Server Error in 46641ms (Allocations: 855346)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:45:47 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+Completed 500 Internal Server Error in 41128ms (Allocations: 899881)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:46:36 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+Completed 500 Internal Server Error in 1352ms (Allocations: 604352)
+
+
+  
+TypeError (no implicit conversion of HTTParty::Response into String):
+  
+app/models/poem_api.rb:6:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:47:24 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+Completed 500 Internal Server Error in 132077ms (Allocations: 923871)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:49:42 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+Completed 500 Internal Server Error in 43261ms (Allocations: 905104)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:50:33 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 14ms (Allocations: 110764)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:6:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:50:38 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 9ms (Allocations: 98114)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:6:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:52:30 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 15ms (Allocations: 110756)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:3:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:52:43 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 86.5ms | Allocations: 959270)
+  Rendered layout layouts/application.html.erb (Duration: 92.7ms | Allocations: 1006482)
+Completed 500 Internal Server Error in 2914ms (Allocations: 2073540)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+    5:     <p><%=line%></p>
+  
+app/views/poems/index.html.erb:2:in `[]'
+app/views/poems/index.html.erb:2
+app/views/poems/index.html.erb:1:in `each'
+app/views/poems/index.html.erb:1
+Started GET "/walt" for ::1 at 2020-12-21 12:53:13 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+Started GET "/walt" for ::1 at 2020-12-21 12:54:07 -0800
+Completed 500 Internal Server Error in 53283ms (Allocations: 1518659)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:20:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+Completed 500 Internal Server Error in 10674ms (Allocations: 874552)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:27:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt" for ::1 at 2020-12-21 12:54:31 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 469.5ms | Allocations: 5747201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 549.6ms | Allocations: 6479211)
+Completed 200 OK in 4581ms (Views: 562.4ms | Allocations: 7500161)
+
+
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:55:57 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 16ms (Allocations: 107564)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:56:02 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+Completed 500 Internal Server Error in 8ms (Allocations: 97045)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/walt whitman"):
+  
+app/models/poem_api.rb:4:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/walt%20whitman" for ::1 at 2020-12-21 12:57:40 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt whitman"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 461.4ms | Allocations: 5186699)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 536.0ms | Allocations: 5918710)
+Completed 200 OK in 2614ms (Views: 548.9ms | Allocations: 6895342)
+
+
+Started GET "/walt" for ::1 at 2020-12-21 12:58:02 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"walt"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 514.1ms | Allocations: 5709458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 592.5ms | Allocations: 6446194)
+Completed 200 OK in 3028ms (Views: 603.1ms | Allocations: 7416436)
+
+
