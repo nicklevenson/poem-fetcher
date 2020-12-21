@@ -1703,3 +1703,462 @@ Processing by PoemsController#index as HTML
 Completed 200 OK in 3028ms (Views: 603.1ms | Allocations: 7416436)
 
 
+Started GET "/maya%20an" for ::1 at 2020-12-21 12:58:49 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"maya an"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 102.9ms | Allocations: 1058328)
+  Rendered layout layouts/application.html.erb (Duration: 105.8ms | Allocations: 1108400)
+Completed 500 Internal Server Error in 1480ms (Allocations: 1687019)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/maya%20angelou" for ::1 at 2020-12-21 12:59:26 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"maya angelou"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 100.2ms | Allocations: 1058327)
+  Rendered layout layouts/application.html.erb (Duration: 102.7ms | Allocations: 1105539)
+Completed 500 Internal Server Error in 935ms (Allocations: 1681182)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/angelou" for ::1 at 2020-12-21 12:59:39 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"angelou"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 99.1ms | Allocations: 1058328)
+  Rendered layout layouts/application.html.erb (Duration: 102.1ms | Allocations: 1105540)
+Completed 500 Internal Server Error in 1306ms (Allocations: 1684346)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/sylvia%20plath" for ::1 at 2020-12-21 12:59:55 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"sylvia plath"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 97.0ms | Allocations: 1058327)
+  Rendered layout layouts/application.html.erb (Duration: 106.9ms | Allocations: 1105539)
+Completed 500 Internal Server Error in 1235ms (Allocations: 1683878)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/sylvia%20plath" for ::1 at 2020-12-21 13:00:23 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"sylvia plath"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 26257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.7ms | Allocations: 758266)
+Completed 200 OK in 1326ms (Views: 100.2ms | Allocations: 1387914)
+
+
+Started GET "/sylvia" for ::1 at 2020-12-21 13:00:30 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"sylvia"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 26257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 759131)
+Completed 200 OK in 1160ms (Views: 96.0ms | Allocations: 1355540)
+
+
+Started GET "/nerud" for ::1 at 2020-12-21 13:00:38 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"nerud"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 26257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.3ms | Allocations: 758263)
+Completed 200 OK in 1205ms (Views: 95.4ms | Allocations: 1356965)
+
+
+Started GET "/neruda" for ::1 at 2020-12-21 13:00:43 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"neruda"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 26257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.7ms | Allocations: 758263)
+Completed 200 OK in 1231ms (Views: 94.5ms | Allocations: 1354732)
+
+
+Started GET "/" for ::1 at 2020-12-21 13:00:48 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nicklevenson/.rvm/gems/ruby-2.6.1/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nicklevenson/.rvm/gems/ruby-2.6.1/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.0ms | Allocations: 49339)
+Completed 200 OK in 45ms (Views: 23.5ms | Allocations: 354297)
+
+
+Started GET "/" for ::1 at 2020-12-21 13:00:58 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nicklevenson/.rvm/gems/ruby-2.6.1/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nicklevenson/.rvm/gems/ruby-2.6.1/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.6ms | Allocations: 55644)
+Completed 200 OK in 55ms (Views: 35.5ms | Allocations: 391178)
+
+
+Started GET "/%" for ::1 at 2020-12-21 13:01:04 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"%"}
+Completed 500 Internal Server Error in 13ms (Allocations: 109719)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "https://poetrydb.org/author/%"):
+  
+app/models/poem_api.rb:5:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/authors/new" for ::1 at 2020-12-21 13:01:15 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/authors/new"):
+  
+Started GET "/a" for ::1 at 2020-12-21 13:01:19 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"a"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 434.7ms | Allocations: 7234374)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 496.8ms | Allocations: 8097775)
+Completed 200 OK in 16906ms (Views: 523.8ms | Allocations: 16352458)
+
+
+Started GET "/hello" for ::1 at 2020-12-21 13:10:35 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"hello"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 85.6ms | Allocations: 1195774)
+  Rendered layout layouts/application.html.erb (Duration: 88.3ms | Allocations: 1249046)
+Completed 500 Internal Server Error in 1722ms (Allocations: 2137542)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@poems.each do |poem| %>
+    2:   <h2><%=poem["title"]%></h2>
+    3:   <h4><%=poem["author"]%></h4>
+    4:   <%poem["lines"].each do |line|%>
+  
+app/views/poems/index.html.erb:1
+Started GET "/a" for ::1 at 2020-12-21 13:10:45 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"a"}
+Completed 500 Internal Server Error in 37875ms (Allocations: 7919927)
+
+
+  
+Errno::EIO (Input/output error @ io_writev - <STDOUT>):
+  
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/a" for ::1 at 2020-12-21 13:11:37 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"a"}
+Completed 500 Internal Server Error in 19728ms (ActiveRecord: 0.0ms | Allocations: 682535)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/a" for ::1 at 2020-12-21 13:12:13 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"a"}
+Completed 500 Internal Server Error in 52084ms (Allocations: 6035241)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:13:07 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Completed 500 Internal Server Error in 82128ms (Allocations: 26910776)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:14:37 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Completed 500 Internal Server Error in 116064ms (Allocations: 641849)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:16:40 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Completed 500 Internal Server Error in 87749ms (Allocations: 777361)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:18:15 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Completed 500 Internal Server Error in 43770ms (Allocations: 777645)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:19:05 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Completed 500 Internal Server Error in 5ms (Allocations: 92005)
+
+
+  
+SyntaxError (/Users/nicklevenson/Desktop/poetry-fetcher/app/models/poem_api.rb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+    byebug
+    ^~~~~~):
+  
+app/models/poem_api.rb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/models/poem_api.rb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/models/poem_api.rb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:19:18 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Completed 500 Internal Server Error in 1425ms (Allocations: 624216)
+
+
+  
+TypeError (no implicit conversion of Net::HTTPUnauthorized into String):
+  
+app/models/poem_api.rb:26:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:19:55 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Completed 500 Internal Server Error in 99467ms (Allocations: 773953)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `fetch_poems'
+app/models/poem_api.rb:28:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/allan" for ::1 at 2020-12-21 13:25:54 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 37.0ms | Allocations: 457590)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 147.0ms | Allocations: 1660608)
+Completed 200 OK in 1228ms (Views: 159.8ms | Allocations: 2409823)
+
+
+Started GET "/howl" for ::1 at 2020-12-21 13:26:07 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"howl"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 106801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 838808)
+Completed 200 OK in 1048ms (Views: 73.2ms | Allocations: 1451617)
+
+
+Started GET "/crest" for ::1 at 2020-12-21 13:26:18 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"crest"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 26257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 758264)
+Completed 200 OK in 1221ms (Views: 67.0ms | Allocations: 1354733)
+
+
+Started GET "/poem" for ::1 at 2020-12-21 13:26:28 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"poem"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1440.5ms | Allocations: 22945498)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1496.8ms | Allocations: 23677506)
+Completed 200 OK in 3271ms (Views: 1503.3ms | Allocations: 24592403)
+
+
+Started GET "/poem" for ::1 at 2020-12-21 13:27:37 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"poem"}
+Completed 500 Internal Server Error in 1972ms (Allocations: 2022455)
+
+
+  
+NoMethodError (undefined method `+' for {"status"=>404, "reason"=>"Not found"}:Hash):
+  
+app/models/poem_api.rb:14:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/poem" for ::1 at 2020-12-21 13:28:21 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"poem"}
+Completed 500 Internal Server Error in 565ms (Allocations: 320492)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/poem_api.rb:6:in `[]'
+app/models/poem_api.rb:6:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/poem" for ::1 at 2020-12-21 13:28:40 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"poem"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 77600)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 130872)
+Completed 500 Internal Server Error in 1943ms (Allocations: 1310845)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <h1><%=@poems.count%> Poems</h1>
+    2: <%@poems.each do |poem| %>
+    3:   <h2><%=poem["title"]%></h2>
+    4:   <h4><%=poem["author"]%></h4>
+    5:   <%poem["lines"].each do |line|%>
+    6:     <p><%=line%></p>
+  
+app/views/poems/index.html.erb:3:in `[]'
+app/views/poems/index.html.erb:3
+app/views/poems/index.html.erb:2:in `each'
+app/views/poems/index.html.erb:2
+Started GET "/poem" for ::1 at 2020-12-21 13:29:04 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"poem"}
+Completed 500 Internal Server Error in 1829ms (Allocations: 892980)
+
+
+  
+TypeError (no implicit conversion of Hash into Array):
+  
+app/models/poem_api.rb:14:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/poem" for ::1 at 2020-12-21 13:29:40 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"poem"}
+Completed 500 Internal Server Error in 1940ms (Allocations: 2004402)
+
+
+  
+NoMethodError (undefined method `+' for {"status"=>404, "reason"=>"Not found"}:Hash):
+  
+app/models/poem_api.rb:14:in `fetch_poems'
+app/controllers/poems_controller.rb:4:in `index'
+Started GET "/poem" for ::1 at 2020-12-21 13:30:06 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"poem"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1497.2ms | Allocations: 25740957)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1559.5ms | Allocations: 26600597)
+Completed 200 OK in 3449ms (Views: 1568.1ms | Allocations: 27660839)
+
+
+Started GET "/a" for ::1 at 2020-12-21 13:30:20 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"a"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 3905.2ms | Allocations: 60621862)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3967.0ms | Allocations: 61448773)
+Completed 200 OK in 14224ms (Views: 3973.4ms | Allocations: 69566080)
+
+
+Started GET "/a" for ::1 at 2020-12-21 13:31:09 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"a"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 65499.4ms | Allocations: 1054956291)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65690.5ms | Allocations: 1055782208)
+Completed 200 OK in 72667ms (Views: 65698.4ms | Allocations: 1063957353)
+
+
+Started GET "/a" for ::1 at 2020-12-21 13:32:45 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"a"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 675.2ms | Allocations: 9261760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 753.4ms | Allocations: 10087675)
+Completed 200 OK in 11575ms (Views: 780.3ms | Allocations: 18329432)
+
+

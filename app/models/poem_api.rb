@@ -3,7 +3,7 @@ class PoemApi
     q = query.split(" ").join("%20")
     author_url = "https://poetrydb.org/author/#{q}"
     author_uri = URI.parse(author_url)
-    author_response = (JSON.parse(Net::HTTP.get_response(author_uri).body))[0..10]
+    author_response = (JSON.parse(Net::HTTP.get_response(author_uri).body))[0..20]
 
 
     title_url = "https://poetrydb.org/title/#{q}"
@@ -17,9 +17,8 @@ class PoemApi
     elsif author_response == nil && title_response
       results = title_response
     else
-      results = nil
+      results = []
     end
     results
-
   end
 end
