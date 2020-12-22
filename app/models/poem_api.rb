@@ -27,7 +27,7 @@ class PoemApi
     by_author = results.select{|result| result["author"].downcase.include?(query.downcase)}
     by_text = results.select{|result| result["text"].include?(query)}
     by_keyword = results.select{|result| result["keywords"].include?(query)}
-    poems = by_author + by_title + by_keyword + by_text
+    poems = (by_author + by_title + by_keyword + by_text).uniq
     poems
   end
 end

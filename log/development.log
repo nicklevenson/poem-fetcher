@@ -2819,3 +2819,36 @@ Processing by PoemsController#index as HTML
 Completed 200 OK in 1824ms (Views: 97.5ms | Allocations: 20351366)
 
 
+Started GET "/neruda" for ::1 at 2020-12-21 19:42:47 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"neruda"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 54.4ms | Allocations: 516682)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.1ms | Allocations: 1295644)
+Completed 200 OK in 1885ms (Views: 110.7ms | Allocations: 20425248)
+
+
+Started GET "/allan" for ::1 at 2020-12-21 19:42:57 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 147.8ms | Allocations: 2819536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 215.6ms | Allocations: 3601547)
+Completed 200 OK in 1960ms (Views: 253.4ms | Allocations: 22806172)
+
+
+Started GET "/allan" for ::1 at 2020-12-21 19:42:59 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 144.5ms | Allocations: 2819536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 211.3ms | Allocations: 3601547)
+Completed 200 OK in 1953ms (Views: 246.8ms | Allocations: 22864505)
+
+
