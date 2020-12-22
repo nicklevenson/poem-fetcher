@@ -5,6 +5,8 @@ ruby '2.6.1'
 
 gem 'json'
 gem 'httparty'
+gem 'nokogiri'
+gem 'open-uri'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'

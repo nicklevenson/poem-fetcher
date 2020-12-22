@@ -2852,3 +2852,133 @@ Processing by PoemsController#index as HTML
 Completed 200 OK in 1953ms (Views: 246.8ms | Allocations: 22864505)
 
 
+Started GET "/ilya%20kaminsky" for ::1 at 2020-12-21 19:44:45 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"ilya kaminsky"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 57.4ms | Allocations: 642789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.7ms | Allocations: 1421748)
+Completed 200 OK in 1811ms (Views: 101.7ms | Allocations: 20569031)
+
+
+Started GET "/jenny%20zhang" for ::1 at 2020-12-21 19:45:16 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"jenny zhang"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 28281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.2ms | Allocations: 807240)
+Completed 200 OK in 1808ms (Views: 80.2ms | Allocations: 19756962)
+
+
+Started GET "/ocean" for ::1 at 2020-12-21 19:45:32 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"ocean"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 145.1ms | Allocations: 2895373)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 212.2ms | Allocations: 3674947)
+Completed 200 OK in 1922ms (Views: 247.6ms | Allocations: 22892350)
+
+
+Started GET "/ocean%20vuong" for ::1 at 2020-12-21 19:45:38 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"ocean vuong"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 47.0ms | Allocations: 353905)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.5ms | Allocations: 1132864)
+Completed 200 OK in 1818ms (Views: 91.1ms | Allocations: 20182397)
+
+
+Started GET "/" for ::1 at 2020-12-22 11:15:13 -0800
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nicklevenson/.rvm/gems/ruby-2.6.1/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nicklevenson/.rvm/gems/ruby-2.6.1/gems/railties-6.1.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 355)
+Completed 200 OK in 25ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2696)
+
+
+Started GET "/moon" for ::1 at 2020-12-22 11:15:18 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"moon"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 6614)
+Completed 200 OK in 2120ms (Views: 78.7ms | ActiveRecord: 0.0ms | Allocations: 50493)
+
+
+Started GET "/moon" for ::1 at 2020-12-22 11:16:02 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"moon"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4560)
+Completed 200 OK in 29341ms (Views: 9.0ms | Allocations: 85004)
+
+
+Started GET "/moon" for ::1 at 2020-12-22 11:16:44 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"moon"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 722)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4202)
+Completed 200 OK in 2031ms (Views: 5.9ms | Allocations: 45920)
+
+
+Started GET "/moon" for ::1 at 2020-12-22 11:17:07 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"moon"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4398)
+Completed 200 OK in 2055ms (Views: 5.9ms | Allocations: 54143)
+
+
+Started GET "/jay%20wright" for ::1 at 2020-12-22 11:17:14 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"jay wright"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4559)
+Completed 200 OK in 17994ms (Views: 8.1ms | Allocations: 52907)
+
+
+Started GET "/allan" for ::1 at 2020-12-22 11:18:12 -0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allan"}
+Started GET "/allen%20ginsberg" for ::1 at 2020-12-22 11:18:15 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allen ginsberg"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6598)
+Completed 200 OK in 20643ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 112204)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5610)
+Completed 200 OK in 19274ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 135305)
+
+

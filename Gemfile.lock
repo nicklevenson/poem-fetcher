@@ -95,6 +95,7 @@ GEM
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     json (2.4.1)
+    json (2.4.1-java)
     listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -127,6 +128,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.10-x86-mingw32)
       mini_portile2 (~> 2.4.0)
+    open-uri (0.1.0)
     public_suffix (4.0.6)
     puma (5.1.1)
       nio4r (~> 2.0)
@@ -243,6 +245,8 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   json
   listen (~> 3.3)
+  nokogiri
+  open-uri
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.0)
