@@ -5880,3 +5880,47 @@ Processing by PoemsController#index as HTML
 Completed 200 OK in 3921ms (Views: 108.3ms | Allocations: 12516395)
 
 
+Started GET "/allen%20ginsberg" for ::1 at 2020-12-22 15:52:26 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allen ginsberg"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 189314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.3ms | Allocations: 1000084)
+Completed 200 OK in 4020ms (Views: 132.5ms | Allocations: 12762086)
+
+
+Started GET "/allen%20ginsberg" for ::1 at 2020-12-22 15:53:35 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allen ginsberg"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 189311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 102.8ms | Allocations: 1000081)
+Completed 200 OK in 4120ms (Views: 124.2ms | Allocations: 12735519)
+
+
+Started GET "/allen%20ginsberg" for ::1 at 2020-12-22 15:55:47 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allen ginsberg"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 189309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 120.7ms | Allocations: 1001010)
+Completed 200 OK in 4514ms (Views: 146.8ms | Allocations: 12693086)
+
+
+Started GET "/allen%20ginsberg" for ::1 at 2020-12-22 15:56:30 -0800
+Processing by PoemsController#index as HTML
+  Parameters: {"q"=>"allen ginsberg"}
+  Rendering layout layouts/application.html.erb
+  Rendering poems/index.html.erb within layouts/application
+  Rendered poems/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 189311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.0ms | Allocations: 1000081)
+Completed 200 OK in 4069ms (Views: 129.9ms | Allocations: 12746310)
+
+
