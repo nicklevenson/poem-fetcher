@@ -22,28 +22,34 @@ class PoemApi
     # results
   end
 
+  # def scrape_poems(query)
+  #   search_url = "https://www.poetryfoundation.org/search?query=#{query}&refinement=poems"
+  #   html = URI.open(search_url)
+  #   doc = Nokogiri::HTML(html)
+  #   links = (doc.css('.c-feature-hd').css('h2').css('a').collect{|link| link.attribute('href').value})[0..10]
+  #   base =  "https://www.poetryfoundation.org"
+  #   poem_data = []
+  #   links.each do |link|
+  #     url = "#{base}#{link}"
+  #     html = URI.open(url)
+  #     doc = Nokogiri::HTML(html).css('.c-feature')
+  #     title = doc.css('.c-feature-hd').css('h1').text.split.join(" ")
+  #     author = doc.css('.c-feature-sub').css('span').css('a').text
+  #     lines = doc.css('.o-poem').to_html.gsub("<a", "--")
+  #     # byebug
+  #     if title != "" && author != ""
+  #       poem_data << {title: title, author: author, lines: lines}
+  #     end
+  #   end
+  #   poem_data
+  # end
+
   def scrape_poems(query)
     search_url = "https://www.poetryfoundation.org/search?query=#{query}&refinement=poems"
     html = URI.open(search_url)
     doc = Nokogiri::HTML(html)
+    # titles = doc.css('.c-feature-hd').collect{|hd| hd.text.split(" ")}.collect{|title|title.join(" ")}
     links = (doc.css('.c-feature-hd').css('h2').css('a').collect{|link| link.attribute('href').value})[0..40]
-    base =  "https://www.poetryfoundation.org"
-    poem_data = []
-    links.each do |link|
-      url = "#{base}#{link}"
-      html = URI.open(url)
-      doc = Nokogiri::HTML(html).css('.c-feature')
-      title = doc.css('.c-feature-hd').css('h1').text.split.join(" ")
-      author = doc.css('.c-feature-sub').css('span').css('a').text
-      lines = doc.css('.o-poem').to_html.gsub("<a", "--")
-      # byebug
-      if title != "" && author != ""
-        poem_data << {title: title, author: author, lines: lines}
-      end
-    end
-
-    poem_data
-    
-    
+    # byebug
   end
 end

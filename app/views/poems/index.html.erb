@@ -1,9 +1,7 @@
 
 <%@poems.each do |poem| %>
-  <h2><%=poem[:title]%></h2>
-  <h4><%=poem[:author]%></h4>
+  
     <div>
-      <iframe style="height: 500px; width: 400px"srcdoc="<%=poem[:lines]%>" ></iframe>
+      <iframe style="height: 500px; width: 400px"src="https://www.poetryfoundation.org<%=poem%>" ></iframe>
     </div>
-<%end%> 
-
+<%end%>

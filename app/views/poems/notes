@@ -1,0 +1,6 @@
+<%@poems.each do |poem| %>
+  
+    <div>
+      <iframe style="height: 500px; width: 400px"srcdoc="<%=poem[:lines]%>" ></iframe>
+    </div>
+<%end%>
